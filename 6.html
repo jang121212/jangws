@@ -1,0 +1,76 @@
+<html>
+        <head>
+                <title>버튼사용 텍스트</title>
+            <style>
+                    body{
+                            background-color:beige;
+                            text-align:center;
+                    }
+                    .bt{
+                            width:20%;
+                            height:10%;
+                            background-color:rgb(255, 170, 255);
+                            font-size:3em;
+                            color:rgb(123, 0, 172);
+                            font-weight:bold;
+                    }
+                    .cls{
+                            width:20%;
+                            height:10%;
+                            background-color:rgb(141, 93, 255);
+                            font-size:3em;
+                            color:rgb(222, 203, 255);
+                            font-weight:bold;
+                            margin-top:3%;
+                    }
+                    .txt{
+                            width:65%;
+                            height:10%;
+                            font-size:3em;
+                            font-weight:bold;
+                            color:red;
+                            text-align:center;
+
+                    }
+                    .hh{
+                            font-size:6em;
+                            font-weight:bold;
+                            color:green;
+                    }
+            </style>
+
+        </head>
+        <body>
+            <h1 class='hh'>1번을 눌러주세요.</h1><br>
+            <input type='text' class='txt' id='txt1'><br><br><br>
+            <button class='bt' onclick='btn1_fnc()'>1번</button>
+            <button class='bt' onclick='btn2_fnc()'>2번</button>
+            <button class='bt' onclick='btn3_fnc()'>3번</button>
+            <button class='bt' onclick='btn4_fnc()'>4번</button>
+            <button class='cls' onclick='btn_cls();'> CLR </button>
+            <script>
+                    function btn1_fnc()
+                    {
+                        document.getElementById('txt1').value='2번을 눌러주세요';
+                    }
+                    function btn2_fnc()
+                    {
+                        document.getElementById('txt1').value='3번을 눌러주세요';
+                    }
+                    function btn3_fnc()
+                    {
+                        document.getElementById('txt1').value='4번을 눌러주세요';
+                    }
+                    function btn4_fnc()
+                    {
+                        document.getElementById('txt1').value='A+ 입니다!! 감사합니다!!';
+                    }
+                    function btn_cls()
+					{
+						document.getElementById('txt1').value=' ';
+					}
+
+            </script>
+
+        </body>
+</html>
